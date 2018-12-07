@@ -1,0 +1,40 @@
+body {
+    margin: 0
+}
+
+.header-container {
+    background-color: #659494;
+    /* background oolor */
+    margin-bottom: 81px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 ;
+    display: block;
+}
+
+
+.title {
+    font-family: 'Calibri';
+    font-size: 3em;
+    float: left;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav a {
+    text-align: right;
+    margin-top: 3.125em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.563em;
+    padding: 10px;
+    text-transform: capitalize;
+    float: ;
+}
+
+
+
+
