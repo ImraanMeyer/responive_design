@@ -1,40 +1,184 @@
-body {
-    margin: 0
-}
+/*************************
+Base Styles
+*************************/
+/* entre html document */
+html {
+    /* color of the page text */
+    color: #222;
+    /* font size set */
+    font-size: 1em;
+    /* line height set */
+    line-height: 1.4;
+    /* all elements sized this way */
+    box-sizing: border-box;
+  }
+  
+  /* selecting all elements*/
+  *,
+  *:before,
+  *:after {
+    /* setting their box size to inherit */
+    box-sizing: inherit;
+  }
+  
+  body {
+    /* sets font-family */
+    font-family: Helvetica, Helvetica Neue, Arial;
+    /* sets font size */
+    font-size: 16px;
+    /* setting line height */
+    line-height: 26px;
+  }
 
-.header-container {
-    background-color: #659494;
-    /* background oolor */
-    margin-bottom: 81px;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 ;
-    display: block;
-}
-
-
-.title {
-    font-family: 'Calibri';
+  .wrapper {
+    /* adujusting width of the wrapper */
+    width: 90%;
+    /* centralising the content */
+    margin: 0 auto;
+  }
+  
+  .header-container {
+    /* setting bottom border for the header */
+    border-bottom: 20px solid #0B132B;
+  }
+  
+  /* selecting the footer container, main class and aside tag */
+  .footer-container,
+  .main aside {
+    /* setting top border */
+    border-top: 20px solid #0B132B;
+  }
+  /* selelcting header, footer containers and main aside tag */
+  .header-container,
+  .footer-container,
+  .main aside {
+    /* setting background color for selecting containers */
+    background: #67AAF9;
+  }
+  
+  /* selecting title classs */
+  .title {
+    /* setting text color to white */
+    color: white;
+    /* setting font size */
     font-size: 3em;
-    float: left;
-}
-
-ul li {
-    text-decoration: none;
+  }
+  
+  /* selecting the ul withing the nav */
+  nav ul {
+    /* seting margin */
+    margin: 0;
+    /* setting padding */
+    padding: 0;
+    /* setting list style type */
     list-style-type: none;
-}
-
-nav a {
-    text-align: right;
-    margin-top: 3.125em;
+  }
+  
+  /* selecting the anchor tags inside the nav */
+  nav a {
+    /* setting the display property*/
+    display: block;
+    /* setting bottom margin */
+    margin-bottom: 10px;
+    /* setting padding */
+    padding: 15px 0;
+    /* centering text */
+    text-align: center;
+    /* removing underlining in anchor tags */
     text-decoration: none;
-    color: black;
-    font-size: 1.563em;
-    padding: 10px;
-    text-transform: capitalize;
-    float: ;
+    /* setting font weight to bold */
+    font-weight: bold;
+    /* setting text color */
+    color: white;
+    /* setting background color of nav anchor tags */
+    background: #0b132b;
+  }
+  
+  nav a:hover,
+  nav a:visited {
+    /* sets the text color to white when hovering and when visited */
+    color: white;
+  }
+  
+  nav a:hover {
+    /* sets and underline when you hover over text */
+    text-decoration: underline;
+  }
+  
+  .main {
+    /* setting padding to 'main' class */
+    padding: 30px 0;
+  }
+  
+  /* selecting h1 in the article under main class */
+  .main article h1 {
+    /* setting font size of h1 */
+    font-size: 2em;
+  }
+  
+  /* selecting aside in the main class */
+  .main aside {
+    /* setting color of text */
+    color: white;
+    /* setting padding of the aside tag */
+    padding: 0px 5% 10px;
+  }
+  
+  /* selecting container and footer */
+  .footer-container footer {
+    /* setting text color */
+    color: white;
+    /* setting padding */
+    padding: 20px 0;
+  }
+
+  /*************************
+  Clearfix
+  *************************/
+
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .clearfix {
+    *zoom: 1;
+  }
+  
+  /*************************
+  Media Queries
+  *************************/
+  /*Media queries are CSS rules that help us include CSS code only when certain conditions are met. These conditions are called media features, and in the case of responsive web design, the media feature most commonly used is width, or more specifically, min-width. However, media queries actually come with many media features, and width is just one of them.*/
+
+  
+@media only screen and (max-width: 480px) {
+    .title {
+      font-size: 2em;
+    }
+
+    body {
+      font-family: Helvetica, Helvetica Neue, Arial;
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 2px;
+      padding: 8px 0;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: #0b132b;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+
+
 }
-
-
-
-
